@@ -1,0 +1,32 @@
+.navbar{
+  background-color: #EDF3FF;
+}
+.myheader{
+  background-color: #EDF3FF;
+ height: 300px;
+}
+.content-header{
+  h3{
+    color: #666AC4;
+    font-size: 20px;
+  font-weight: 500;
+  }
+  h1{
+    color: #343978;
+    font-size: 40px;
+    font-weight: 500;
+    }
+  p{
+    color: #666AC4;
+    font-weight: 400;
+    padding: 10px
+  }
+  form{
+    width: 500px;
+
+    .btn-outline{
+      background-color: #474CAC !important;
+      color: #EDF3FF;
+    }
+  }
+}

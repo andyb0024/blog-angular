@@ -1,0 +1,15 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-6 col-lg-6 col-sm-4 my-3"  *ngFor="let post of posts">
+  <div class="card">
+  <img [src]="post.get_image" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      <h2 class="card-title">{{post.title |uppercase}}</h2>
+     <p class="card-text">{{post.content | slice :0:50}}</p>
+      <p class="card-text">posted on {{post.timestamp|date}}</p>
+      <a [routerLink]="['/post',post.slug ]" >Read post <i class="fas fa-long-arrow-right"></i></a>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>

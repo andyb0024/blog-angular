@@ -1,0 +1,27 @@
+.container{
+  max-width: 600px;
+
+  height: 100%;
+  background-color: #fff;
+}
+
+.card{
+  border: none;
+  .card-title{
+    color: #474CAC;
+  }
+  .card-text{
+    color: #474CAC;
+  }
+  a{
+    font-weight: 900;
+    color: #474CAC;
+
+
+    i{
+      font-size: 14px;
+      font-weight: 900;
+    }
+  }
+}
+
