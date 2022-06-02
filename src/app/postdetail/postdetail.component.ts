@@ -19,10 +19,10 @@ export class PostdetailComponent implements OnInit {
   }
  postDetail():void{
 
-     const slug = this.route.snapshot.params['slug'];
-     this.service.findPostById(slug).subscribe((response:any)=>{
-       this.posts=response
-
-       })
+    //  const slug = this.route.snapshot.params['slug'];
+    //  this.service.findPostById(slug).subscribe((response:any)=>{
+    //    this.posts=response
+    //   console.log(response)
+    //    })
    }
 }

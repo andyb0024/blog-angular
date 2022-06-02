@@ -10,24 +10,53 @@ import { response } from 'express';
 })
 export class PostComponent implements OnInit {
   posts:Post[]=[];
+  caterogy!:string
   constructor(private apiService:ApiServiceService) { }
 
   ngOnInit(): void {
     this.postList()
+
+    this.test2()
   }
 
+
+  getColor(){
+  //   this.apiService.getPost().subscribe(
+  //     (response:any)=>{
+  //  this.posts=response
+  //       console.log(response);
+  //   if(response.category ==="Business"){
+  //         return "green";
+  //     } else if(response==="Sport"){
+  //       return "red";
+  //     }
+  //     return
+  //     }
+
+  //   )
+
+
+    }
 
   postList(){
-    this.apiService.getPost().subscribe(
-      (response:any)=>{
-        this.posts=response
-        console.log(response);
+    this.apiService.find$(`list`).subscribe({
+      next:(res)=>{
+        this.posts=res
+        console.log("res ==> ", res)
+      },
+      error:(error)=>{
+        console.log(error);
 
       }
+    })
 
-    )
+
 
   }
+test2(){
+  this.apiService.test()
+  console.log("rufijk");
 
-  
+}
+
 }

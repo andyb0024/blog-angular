@@ -1,1 +1,15 @@
-<p>postdetail works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-lg-12 col-sm-4 my-3"  >
+    <div class="card">
+    <img [src]="posts.get_image" class="card-img-top" alt="Fissure in Sandstone"/>
+      <div class="card-body">
+        <h2 class="card-title">{{posts.title |uppercase}}</h2>
+       <p class="card-text">{{posts.content }}</p>
+        <p class="card-text">posted on {{posts.timestamp|date}}</p>
+
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>

@@ -8,6 +8,7 @@
      <p class="card-text">{{post.content | slice :0:50}}</p>
       <p class="card-text">posted on {{post.timestamp|date}}</p>
       <a [routerLink]="['/post',post.slug ]" >Read post <i class="fas fa-long-arrow-right"></i></a>
+      <span  class="badge " [ngStyle]="{color:getColor()}">{{post.category}}</span>
     </div>
     </div>
     </div>
